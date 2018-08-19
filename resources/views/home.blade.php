@@ -11,7 +11,7 @@
                             AÇÕES
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" data-toggle="collapse" href="#formAdicionarSepultamento" role="button" aria-expanded="false" aria-controls="formAdicionarSepultamento">ADICIONAR SEPULTAMENTO</a>
+                            <a class="dropdown-item" data-toggle="collapse" href="#formAdicionarSepultamento" role="button" aria-expanded="false" aria-controls="formAdicionarSepultamento">AÇÃO 1</a>
                             <a class="dropdown-item" data-toggle="collapse" href="#formPesquisarSepultamento" role="button" aria-expanded="false" aria-controls="formPesquisarSepultamento">PESQUISAR</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
@@ -30,7 +30,7 @@
 
                     <div class="collapse" id="formAdicionarSepultamento">
                         <div class="card card-body">
-                            FORMULÁRIO ADICIONAR SEPULTAMENTO
+                            AÇÃO 1
                         </div>
                     </div>
 

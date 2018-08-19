@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        
           <title>{{ config('app.name', 'GUARDA CIVIL MUNICIPAL DE CACHOEIRO DE ITAPEMIRIM - ES') }}</title>
 
         <!-- Fonts -->
@@ -47,11 +49,11 @@
   <div class="tab-pane fade show active" id="pills-public-data" role="tabpanel" aria-labelledby="pills-public-data-tab">
   
     <div class="row justify-content-center">
-        <form class="form-signin" method="POST" action="{{ route('login') }}">
+        <form class="form-signin" method="POST" action="{{ route('funcionalPublica') }}">
             @csrf
             
-            <label for="matricula" >Matrícula</label>
-            <input type="text" id="matricula" name="matricula" class="form-control text-center" placeholder="Digite sua matrícula" required autofocus>
+            <label for="matricula1" >Matrícula</label>
+            <input type="text" id="matricula1" name="matricula" class="form-control text-center" placeholder="Digite sua matrícula" value="{{ $matricula }}"required autofocus>
            
 
             
@@ -76,7 +78,7 @@
             @csrf
                 
             <label for="matricula" >Matrícula</label>
-            <input type="text" id="matricula" name="matricula" class="form-control text-center" placeholder="Digite sua matrícula" required autofocus>
+            <input type="text" id="matricula" name="matricula" class="form-control text-center" placeholder="Digite sua matrícula" value="{{ $matricula }}" required autofocus>
             
             @if ($errors->all())
             <div class="alert alert-danger" role="alert">
@@ -93,17 +95,12 @@
     </div>
   </div>
 
-
   
 </div>
 
 
-   
 
-
-
-   
-  </div>
+</div>
 
 
 
